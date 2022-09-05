@@ -31,6 +31,9 @@
 
 .intro-name {
     font-size: 60px;
+    margin-top: 0;
+    color: crimson;
+    text-align: center;
 }
 
 .intro-title {

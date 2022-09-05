@@ -1,5 +1,5 @@
 import "./intro.css";
-import Me from "../../assets/img/profile.png"
+import Me from "../../assets/img/profile.png";
 
 function Intro() {
     return (
@@ -22,11 +22,10 @@ function Intro() {
                         </div>
                     </div>
                     <p className="intro-description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Tempore esse, debitis nam tenetur exercitationem
-                        facilis molestiae velit deserunt quaerat fugit. Corrupti
-                        necessitatibus repellat voluptate dignissimos
-
+                        Always motivated to achieve the goals and never leave
+                        them by half. When I enjoy doing something, I always
+                        give it my all. I have always been a computer buff and
+                        learned everything I needed to use them by myself.
                     </p>
                 </div>
             </div>
