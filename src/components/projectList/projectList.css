@@ -26,3 +26,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 480px) {
+    .lists {
+        padding: 10px;
+    }
+
+    .lists-text {
+        width: 100%;
+    }
+}
