@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
 import Phone from "../../assets/img/phone.png";
@@ -8,10 +8,13 @@ import GitHub from "../../assets/img/github.png";
 import LinkedIn from "../../assets/img/linkedin.png";
 import Facebook from "../../assets/img/facebook.png";
 import Instagram from "../../assets/img/instagram.png";
+import { ThemeContext } from "../../context";
 
 function Contact() {
     const formRef = useRef();
     const [send, setSend] = useState(false);
+    const theme = useContext(ThemeContext);
+    const lightMode = theme.state.lightMode;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -110,24 +113,31 @@ function Contact() {
                     </p>
                     <form ref={formRef} onSubmit={handleSubmit}>
                         <input
+                            style={{ background: !lightMode && "#333" }}
                             type="text"
                             placeholder="Name"
                             name="user_name"
                             required="true"
                         />
                         <input
+                            style={{ background: !lightMode && "#333" }}
                             type="text"
                             placeholder="Email"
                             required="true"
                             name="user_email"
                         />
                         <input
+                            style={{ background: !lightMode && "#333" }}
                             type="text"
                             placeholder="Subject"
                             required="true"
                             name="user_subject"
                         />
                         <textarea
+                            style={{
+                                background: !lightMode && "#333",
+                                border: !lightMode && "none",
+                            }}
                             rows="5"
                             placeholder="Message"
                             required="true"
