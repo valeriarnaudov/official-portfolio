@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/about/About';
+import Contact from './components/contact/Contact';
 import Intro from './components/intro/Intro';
 import Loading from './components/Loading';
 import ProjectList from './components/projectList/ProjectList';
@@ -10,6 +11,7 @@ function App() {
       <Intro />
       <About />
       <ProjectList />
+      <Contact />
       {/* <Loading /> */}
     </div>
   );
