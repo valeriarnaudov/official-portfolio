@@ -5,7 +5,7 @@ import { projects } from "../../data";
 
 function ProjectList() {
     return (
-        <div className="lists">
+        <section id="projects" className="lists">
             <div className="lists-text">
                 <h1 className="lists-title">My projects</h1>
                 <p className="lists-desc">
@@ -17,7 +17,7 @@ function ProjectList() {
                     <Projects img={item.img} key={item.id} link={item.link}/>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }
 

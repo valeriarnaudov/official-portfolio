@@ -36,3 +36,13 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .lists {
+        padding: 10px;
+    }
+
+    .lists-text {
+        width: 100%;
+    }
+}

@@ -1,7 +1,8 @@
 .intro {
     display: flex;
     height: 100vh;
-    background-color: grey;
+    background: url("../../assets/img/wood.jpg") no-repeat center;
+    color: white;
 }
 
 .intro-left {
@@ -14,8 +15,7 @@
 .intro-right {
     flex: 1;
     position: relative;
-    filter: drop-shadow(15px 10px 20px rgb(0, 0, 0))
-
+    filter: drop-shadow(15px 10px 20px rgb(0, 0, 0));
 }
 
 .intro-left-wrapper {
@@ -36,7 +36,7 @@
     margin-top: 0;
     color: crimson;
     text-align: center;
-    filter: drop-shadow(20px 15px 20px rgb(0, 0, 0))
+    filter: drop-shadow(20px 15px 20px rgb(0, 0, 0));
 }
 
 .intro-title {
@@ -78,11 +78,19 @@
     object-fit: contain;
     position: absolute;
     right: 0;
-    filter: drop-shadow(30px 30px 30px #333)
+    filter: drop-shadow(30px 30px 30px #333);
 }
 
 .intro-bg {
-    clip-path: polygon(40% 0%, 30% 36%, 100% 20%, 100% 80%, 30% 64%, 40% 100%, 0% 50%);
+    clip-path: polygon(
+        40% 0%,
+        30% 36%,
+        100% 20%,
+        100% 80%,
+        30% 64%,
+        40% 100%,
+        0% 50%
+    );
     background-color: crimson;
     width: 100%;
     height: 100%;
@@ -96,13 +104,46 @@
         flex-direction: column;
     }
     .intro-left-wrapper {
-        padding: 10px;
+        padding: 40px;
         align-items: center;
         text-align: center;
         justify-content: center;
         height: 100%;
     }
     .intro-bg {
-        clip-path: polygon(0 40%, 50% 0, 100% 40%, 64% 30%, 80% 100%, 20% 100%, 36% 30%);
+        clip-path: polygon(
+            0 40%,
+            50% 0,
+            100% 40%,
+            64% 30%,
+            80% 100%,
+            20% 100%,
+            36% 30%
+        );
     }
 }
+
+@media screen and (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+    }
+    .intro-left-wrapper {
+        padding: 40px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .intro-bg {
+        clip-path: polygon(
+            0 40%,
+            50% 0,
+            100% 40%,
+            64% 30%,
+            80% 100%,
+            20% 100%,
+            36% 30%
+        );
+    }
+}
+

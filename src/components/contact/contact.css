@@ -1,5 +1,5 @@
 .contact {
-    height: 100vh;
+    height: 100%;
     position: relative;
 }
 
@@ -86,10 +86,7 @@ button {
     color: crimson;
 }
 
-@media screen and (max-width: 480px) {
-    .contact {
-        height: 100%;
-    }
+@media screen and (max-width: 768px) {
     .contact-wrapper {
         flex-direction: column;
         padding: 0px 50px;
@@ -110,5 +107,4 @@ button {
     button {
         margin-bottom: 20px;
     }
-
 }

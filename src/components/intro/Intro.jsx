@@ -3,7 +3,7 @@ import Me from "../../assets/img/profile.png";
 
 function Intro() {
     return (
-        <div className="intro">
+        <section id="intro" className="intro">
             <div className="intro-left">
                 <div className="intro-left-wrapper">
                     <h2 className="intro-intro">Hello! My name is</h2>
@@ -33,7 +33,7 @@ function Intro() {
                 <div className="intro-bg"></div>
                 <img src={Me} alt="Profile IMG" className="intro-img" />
             </div>
-        </div>
+        </section>
     );
 }
 

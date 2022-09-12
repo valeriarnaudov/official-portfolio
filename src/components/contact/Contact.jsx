@@ -38,7 +38,7 @@ function Contact() {
     };
 
     return (
-        <div className="contact">
+        <section id="contact" className="contact">
             <div className="contact-bg"></div>
             <div className="contact-wrapper">
                 <div className="contact-left">
@@ -153,7 +153,7 @@ function Contact() {
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
