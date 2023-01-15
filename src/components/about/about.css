@@ -41,16 +41,41 @@
 
 .about-title {
     font-weight: 400;
-
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .about-sub {
     margin: 20px 0;
-
+    margin-left: 1rem;
 }
 
 .about-desc {
     font-weight: 300;
+    text-indent: 1rem;
+}
+
+.cv-btn {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: crimson;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    border: 3px solid crimson;
+}
+
+.cv-btn:hover {
+    background-color: white;
+    color: crimson;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 @media screen and (max-width: 480px) {
@@ -66,7 +91,6 @@
 
     .about-card {
         height: 30vh;
-
     }
     .about-card.bg {
         display: none;
@@ -90,7 +114,6 @@
 
     .about-card {
         height: 30vh;
-
     }
     .about-card.bg {
         display: none;

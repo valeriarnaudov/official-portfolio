@@ -30,7 +30,7 @@ function About() {
                     technology, but this is just the beggining. I'm available to
                     give my all, to reach the max level and goals!
                 </p>
-                <a href="./cv/Valeri CV.pdf">Download CV</a>
+                <a className="cv-btn" href="./cv/Valeri CV.pdf">Download CV</a>
             </div>
         </section>
     );
