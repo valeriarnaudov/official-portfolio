@@ -1,29 +1,31 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import "./navbar.css";
-import { AiOutlineMenu } from "react-icons/ai";
 
 function NavBar() {
+    const [sticky, setSticky] = useState(false);
+
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (window.scrollY < 20) {
-                document.querySelector(".navbar").classList.remove("sticky");
+                setSticky(false);
             } else {
-                document.querySelector(".navbar").classList.add("sticky");
+                setSticky(true);
             }
         });
     }, []);
 
-    const toogleMenu = () => {
-        document.querySelector(".navbar .menu").classList.add("active");
-        document.querySelector(".menu-btn").classList.add("active");
-    }
- 
     return (
-        <nav className="navbar sticky">
+        <nav className={`navbar ${sticky ? "sticky" : ""}`}>
             <div className="max-width">
                 <div className="logo">
-                    <Link to="intro">
+                    <Link
+                        to="intro"
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        delay={500}
+                    >
                         VaLto<span>Dev</span>
                     </Link>
                 </div>
@@ -64,7 +66,7 @@ function NavBar() {
                             spy={true}
                             offset={-73}
                             smooth={true}
-                            duration={500}
+                            duration={1000}
                             delay={500}
                         >
                             Projects
@@ -85,7 +87,6 @@ function NavBar() {
                         </Link>
                     </li>
                 </ul>
-                <div className="menu-btn" onClick={toogleMenu}><AiOutlineMenu/></div>
             </div>
         </nav>
     );
