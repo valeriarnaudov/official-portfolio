@@ -1,5 +1,6 @@
 import "./intro.css";
 import Me from "../../assets/img/profile.png";
+import ReactTypingEffect from "react-typing-effect";
 
 function Intro() {
     return (
@@ -8,19 +9,20 @@ function Intro() {
                 <div className="intro-left-wrapper">
                     <h2 className="intro-intro">Hello! My name is</h2>
                     <h1 className="intro-name">Valeri Arnaudov</h1>
-                    <div className="intro-title">
-                        <div className="intro-title-wrapper">
-                            <div className="intro-title-item">
-                                Web Developer
-                            </div>
-                            <div className="intro-title-item">
-                                With JavaScript
-                            </div>
-                            <div className="intro-title-item">React</div>
-                            <div className="intro-title-item">HTML</div>
-                            <div className="intro-title-item">CSS</div>
-                        </div>
-                    </div>
+                    <ReactTypingEffect
+                        className="intro-title-item"
+                        text={[
+                            "Web developer",
+                            "JavaScript Developer",
+                            "React Developer",
+                            "HTML & CSS Developer",
+                            "Angular Developer",
+                        ]}
+                        speed={80}
+                        eraseSpeed={80}
+                        eraseDelay={200}
+                        typingDelay={10}
+                    />
                     <p className="intro-description">
                         Always motivated to achieve the goals and never leave
                         them by half. When I enjoy doing something, I always
