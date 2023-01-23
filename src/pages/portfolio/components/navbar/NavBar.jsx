@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import Toogle from "./toogle/Toogle";
 import "./navbar.css";
-import { ThemeContext } from "../../context";
+import { ThemeContext } from "../../../../context";
 
 function NavBar() {
     const theme = useContext(ThemeContext);
@@ -127,11 +127,11 @@ function NavBar() {
                         className="close"
                         onClick={() => setBarDisplayed(false)}
                     >
-                        <i class="fa-solid fa-x"></i>
+                        <i className="fa-solid fa-x"></i>
                     </li>
                 </ul>
                 <div className="menu-btn" onClick={() => setBarDisplayed(true)}>
-                    <i class="fa-solid fa-bars bars"></i>
+                    <i className="fa-solid fa-bars bars"></i>
                 </div>
                 <Toogle />
             </div>

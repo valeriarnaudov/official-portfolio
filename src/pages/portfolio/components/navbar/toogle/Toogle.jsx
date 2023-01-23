@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import "./toogle.css";
-import Sun from "../../../assets/img/sun.png";
-import Moon from "../../../assets/img/moon.png";
-import { ThemeContext } from "../../../context";
+import Sun from "../../../../../assets/img/sun.png";
+import Moon from "../../../../../assets/img/moon.png";
+import { ThemeContext } from "../../../../../context";
 
 function Toogle() {
     const theme = useContext(ThemeContext);

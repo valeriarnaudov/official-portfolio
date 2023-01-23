@@ -1,5 +1,5 @@
 import "./intro.css";
-import Me from "../../assets/img/profile.png";
+import Me from "../../../../assets/img/profile.png";
 import ReactTypingEffect from "react-typing-effect";
 
 function Intro() {

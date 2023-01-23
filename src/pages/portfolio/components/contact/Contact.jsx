@@ -1,14 +1,14 @@
 import React, { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "./contact.css";
-import Phone from "../../assets/img/phone.png";
-import Email from "../../assets/img/email.png";
-import Adress from "../../assets/img/location.png";
-import GitHub from "../../assets/img/github.png";
-import LinkedIn from "../../assets/img/linkedin.png";
-import Facebook from "../../assets/img/facebook.png";
-import Instagram from "../../assets/img/instagram.png";
-import { ThemeContext } from "../../context";
+import Phone from "../../../../assets/img/phone.png";
+import Email from "../../../../assets/img/email.png";
+import Adress from "../../../../assets/img/location.png";
+import GitHub from "../../../../assets/img/github.png";
+import LinkedIn from "../../../../assets/img/linkedin.png";
+import Facebook from "../../../../assets/img/facebook.png";
+import Instagram from "../../../../assets/img/instagram.png";
+import { ThemeContext } from "../../../../context";
 import Underline from "../common/Underline";
 
 function Contact() {

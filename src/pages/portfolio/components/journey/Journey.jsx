@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import "./journey.css";
-import EducationIcon from "../../assets/img/mortarboard.png";
-import WorkIcon from "../../assets/img/suitcase.png";
-import { education, work } from "../../data";
+import EducationIcon from "../../../../assets/img/mortarboard.png";
+import WorkIcon from "../../../../assets/img/suitcase.png";
+import { education, work } from "../../data/data";
 import List from "./list/List";
-import { ThemeContext } from "../../context";
+import { ThemeContext } from "../../../../context";
 import Underline from "../common/Underline";
 
 function Journey() {

@@ -1,5 +1,5 @@
-import EducationIcon from "./assets/img/mortarboard.png";
-import WorkIcon from "./assets/img/suitcase.png";
+import EducationIcon from "../../../assets/img/mortarboard.png";
+import WorkIcon from "../../../assets/img/suitcase.png";
 
 export const projects = [
     {

@@ -1,7 +1,7 @@
 .intro {
     display: flex;
     height: 100vh;
-    background: url("../../assets/img/wood.jpg") no-repeat center;
+    background: url("../../../../assets/img/wood.jpg") no-repeat center;
     color: white;
 }
 
@@ -146,4 +146,3 @@
         );
     }
 }
-

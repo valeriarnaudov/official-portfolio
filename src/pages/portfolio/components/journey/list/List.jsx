@@ -1,5 +1,5 @@
 import React from "react";
-import Calendar from "../../../assets/img/schedule.png";
+import Calendar from "../../../../../assets/img/schedule.png";
 import "./list.css";
 
 function List({ data }) {

@@ -1,9 +1,9 @@
 import "./about.css";
-import Card from "../../assets/img/card.png";
-import CV from "../../assets/docs/Resume.pdf";
+import Card from "../../../../assets/img/card.png";
+import CV from "../../../../assets/docs/Resume.pdf";
 import Underline from "../common/Underline";
 import { useContext } from "react";
-import { ThemeContext } from "../../context";
+import { ThemeContext } from "../../../../context";
 
 function About() {
     const theme = useContext(ThemeContext);

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import Projects from "./projects/Projects";
 import "./projectList.css";
-import { projects } from "../../data";
-import { ThemeContext } from "../../context";
+import { projects } from "../../data/data";
+import { ThemeContext } from "../../../../context";
 import Underline from "../common/Underline";
 
 function ProjectList() {
