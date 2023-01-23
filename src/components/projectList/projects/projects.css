@@ -52,15 +52,27 @@
     transform: translateY(-100%);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px){
     .project {
-        width: 40%;
-        height: 30vh;
+        width: 45%;
     }
 }
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 768px) {
     .project {
-        width: 40%;
-        height: 20vh;
+        width: 45%;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .project {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project {
+        width: 90%;
     }
 }

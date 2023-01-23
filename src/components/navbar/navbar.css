@@ -1,3 +1,5 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css";
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -6,17 +8,20 @@
     transition: all 0.3s ease;
     text-decoration: none;
 }
+
 .navbar.sticky {
     padding: 10px 0;
     background: #333;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
 }
+
 .navbar .max-width {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .navbar .logo a {
     margin-left: 30px;
     color: #fff;
@@ -39,6 +44,7 @@
     list-style: none;
     display: inline-block;
 }
+
 .navbar .menu li a {
     display: block;
     color: #fff;
@@ -48,21 +54,75 @@
     transition: color 0.3s ease;
     cursor: pointer;
 }
+
 .navbar .menu li a.active {
     color: crimson;
 }
+
 .navbar .menu li a:hover {
     color: crimson;
 }
+
 .navbar.sticky .menu li a:hover {
     color: crimson;
 }
+
 .menu-btn {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+.navbar .menu li.close {
+    display: none;
+}
+
+@media screen and (max-width: 860px) {
+    .navbar .menu li.close {
+        display: unset;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        margin-top: 3rem;
+    }
+
+    .navbar .menu li.close:hover {
+        color: crimson;
+    }
+
     .menu {
-        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0;
+        padding: 0;
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .menu li a.menu-btn {
+        display: unset;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+
+    .menu-btn {
+        display: unset;
+    }
+
+    .menu-btn i {
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .menu-btn i:hover {
+        color: crimson;
     }
 }

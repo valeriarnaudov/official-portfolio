@@ -1,5 +1,5 @@
 .lists {
-    padding: 50px 100px;
+    padding: 50px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +30,12 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+    .lists-list {
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 480px) {

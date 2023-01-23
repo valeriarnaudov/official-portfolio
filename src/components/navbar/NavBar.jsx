@@ -10,6 +10,8 @@ function NavBar() {
 
     const [sticky, setSticky] = useState(false);
 
+    const [barDisplayed, setBarDisplayed] = useState(false);
+
     useEffect(() => {
         window.addEventListener("scroll", () => {
             if (window.scrollY < 20) {
@@ -42,7 +44,10 @@ function NavBar() {
                         VaLto<span>Dev</span>
                     </Link>
                 </div>
-                <ul className="menu">
+                <ul
+                    className="menu"
+                    style={{ left: barDisplayed ? "0" : "-100%" }}
+                >
                     <li>
                         <Link
                             to="intro"
@@ -53,6 +58,7 @@ function NavBar() {
                             smooth={true}
                             duration={500}
                             delay={500}
+                            onClick={() => setBarDisplayed(false)}
                         >
                             Home
                         </Link>
@@ -67,6 +73,7 @@ function NavBar() {
                             smooth={true}
                             duration={500}
                             delay={500}
+                            onClick={() => setBarDisplayed(false)}
                         >
                             About
                         </Link>
@@ -81,6 +88,7 @@ function NavBar() {
                             smooth={true}
                             duration={1000}
                             delay={500}
+                            onClick={() => setBarDisplayed(false)}
                         >
                             Projects
                         </Link>
@@ -95,6 +103,7 @@ function NavBar() {
                             smooth={true}
                             duration={1000}
                             delay={500}
+                            onClick={() => setBarDisplayed(false)}
                         >
                             Journey
                         </Link>
@@ -109,11 +118,21 @@ function NavBar() {
                             smooth={true}
                             duration={500}
                             delay={500}
+                            onClick={() => setBarDisplayed(false)}
                         >
                             Contanct
                         </Link>
                     </li>
+                    <li
+                        className="close"
+                        onClick={() => setBarDisplayed(false)}
+                    >
+                        <i class="fa-solid fa-x"></i>
+                    </li>
                 </ul>
+                <div className="menu-btn" onClick={() => setBarDisplayed(true)}>
+                    <i class="fa-solid fa-bars bars"></i>
+                </div>
                 <Toogle />
             </div>
         </nav>

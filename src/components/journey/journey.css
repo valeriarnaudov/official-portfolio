@@ -22,7 +22,7 @@
 }
 
 .journey .journey-title .subtitle {
-    margin: 20px;
+    margin: 20px 0;
 }
 
 .journey-container {
@@ -61,4 +61,18 @@
 
 .journey-container .journey-tabs .journey-btn .icon {
     width: 2rem;
+}
+
+@media screen and (max-width: 670px) {
+    .journey {
+        padding: 50px 0;
+    }
+/* 
+    .subtitle {
+        margin: 20px 0;
+    } */
+
+    .journer .journey-title {
+        width: 100%;
+    }
 }
