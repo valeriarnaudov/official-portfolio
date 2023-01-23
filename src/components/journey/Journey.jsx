@@ -5,6 +5,7 @@ import WorkIcon from "../../assets/img/suitcase.png";
 import { education, work } from "../../data";
 import List from "./list/List";
 import { ThemeContext } from "../../context";
+import Underline from "../common/Underline";
 
 function Journey() {
     const theme = useContext(ThemeContext);
@@ -20,12 +21,21 @@ function Journey() {
     };
 
     return (
-        <section id="journey" className="journey" style={{ background: themeStyle ? "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 100%)" : "" }}>
+        <section
+            id="journey"
+            className="journey"
+            style={{
+                background: themeStyle
+                    ? "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 100%)"
+                    : "",
+            }}
+        >
             <div className="journey-title">
-                <h1 className="title">My Journey</h1>
-                <span className="subtitle">
-                    Qualification and work experience
-                </span>
+                <div className="title-container">
+                    <h1 className="title">My Journey</h1>
+                    <Underline />
+                </div>
+                <p className="subtitle">Qualification and work experience</p>
             </div>
             <div className="journey-container">
                 <div className="journey-tabs">

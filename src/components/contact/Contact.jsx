@@ -9,6 +9,7 @@ import LinkedIn from "../../assets/img/linkedin.png";
 import Facebook from "../../assets/img/facebook.png";
 import Instagram from "../../assets/img/instagram.png";
 import { ThemeContext } from "../../context";
+import Underline from "../common/Underline";
 
 function Contact() {
     const formRef = useRef();
@@ -40,9 +41,22 @@ function Contact() {
     return (
         <section id="contact" className="contact">
             <div className="contact-bg"></div>
-            <div className="contact-wrapper">
+            <div
+                className="contact-wrapper"
+                style={{
+                    background: lightMode
+                        ? "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 100%)"
+                        : "",
+                }}
+            >
                 <div className="contact-left">
-                    <h1 className="contact-title">Contact me</h1>
+                    <div
+                        className="title-container"
+                        style={{ alignItems: "flex-start" }}
+                    >
+                        <h1 className="contact-title">Contact me</h1>
+                        <Underline />
+                    </div>
                     <div className="contact-info">
                         <div className="contact-info-item">
                             <img src={Phone} alt="" className="contact-icon" />
@@ -56,7 +70,13 @@ function Contact() {
                             <img src={Adress} alt="" className="contact-icon" />
                             Haskovo 6300, Bulgaria
                         </div>
-                        <h1 className="contact-title">Socials</h1>
+                        <div
+                            className="title-container"
+                            style={{ alignItems: "flex-start" }}
+                        >
+                            <h1 className="contact-title">Socials</h1>
+                            <Underline />
+                        </div>
                         <div className="contact-info-item">
                             <a
                                 href="https://github.com/valeriarnaudov/"

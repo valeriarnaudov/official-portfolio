@@ -4,7 +4,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: darkgray;
+    background: linear-gradient(
+        0deg,
+        rgba(81, 81, 81, 1) 0%,
+        rgba(33, 33, 33, 1) 100%
+    );
 }
 
 .journey .journey-title {
@@ -14,10 +18,11 @@
 .journey .journey-title .title {
     font-style: 50px;
     font-weight: 600;
+    margin: 3px;
 }
 
 .journey .journey-title .subtitle {
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .journey-container {

@@ -3,6 +3,7 @@ import Projects from "./projects/Projects";
 import "./projectList.css";
 import { projects } from "../../data";
 import { ThemeContext } from "../../context";
+import Underline from "../common/Underline";
 
 function ProjectList() {
     const theme = useContext(ThemeContext);
@@ -12,10 +13,17 @@ function ProjectList() {
         <section
             id="projects"
             className="lists"
-            style={{ background: themeStyle ? "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 100%)" : "" }}
+            style={{
+                background: themeStyle
+                    ? "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 100%)"
+                    : "",
+            }}
         >
             <div className="lists-text">
-                <h1 className="lists-title">My projects</h1>
+                <div className="title-container">
+                    <h1 className="lists-title">My projects</h1>
+                    <Underline />
+                </div>
                 <p className="lists-desc">
                     That are all my projects created by me.
                 </p>

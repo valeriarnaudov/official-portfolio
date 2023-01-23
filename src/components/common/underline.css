@@ -1,0 +1,13 @@
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.underline {
+    height: 2px;
+    border: 1px solid crimson;
+    background-color: crimson;
+    border-radius: 20px;
+    width: 100px;
+}

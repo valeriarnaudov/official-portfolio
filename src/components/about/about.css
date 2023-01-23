@@ -2,6 +2,11 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    background: linear-gradient(
+        0deg,
+        rgba(81, 81, 81, 1) 0%,
+        rgba(33, 33, 33, 1) 100%
+    );
 }
 
 .about-left {
@@ -44,6 +49,7 @@
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
+    margin: 3px;
 }
 
 .about-sub {

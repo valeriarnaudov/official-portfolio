@@ -1,9 +1,24 @@
 import "./about.css";
 import Card from "../../assets/img/card.png";
+import CV from "../../assets/docs/Resume.pdf";
+import Underline from "../common/Underline";
+import { useContext } from "react";
+import { ThemeContext } from "../../context";
 
 function About() {
+    const theme = useContext(ThemeContext);
+    const themeStyle = theme.state.lightMode;
+
     return (
-        <section id="about" className="about">
+        <section
+            id="about"
+            className="about"
+            style={{
+                background: themeStyle
+                    ? "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 100%)"
+                    : "",
+            }}
+        >
             <div className="about-left">
                 <div className="about-card bg"></div>
                 <div className="about-card">
@@ -11,7 +26,10 @@ function About() {
                 </div>
             </div>
             <div className="about-right">
-                <h1 className="about-title">About me</h1>
+                <div className="title-container">
+                    <h1 className="about-title">About me</h1>
+                    <Underline />
+                </div>
                 <p className="about-sub">
                     I'm Valeri, 27 years old, from Bulgaria.
                 </p>
@@ -30,7 +48,9 @@ function About() {
                     technology, but this is just the beggining. I'm available to
                     give my all, to reach the max level and goals!
                 </p>
-                <a className="cv-btn" href="./cv/Valeri CV.pdf">Download CV</a>
+                <a className="cv-btn" href={CV}>
+                    Download CV
+                </a>
             </div>
         </section>
     );

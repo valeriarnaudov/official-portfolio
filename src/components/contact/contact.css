@@ -13,6 +13,11 @@
 .contact-wrapper {
     padding: 50px;
     display: flex;
+    background: linear-gradient(
+        180deg,
+        rgba(81, 81, 81, 1) 0%,
+        rgba(33, 33, 33, 1) 100%
+    );
 }
 
 .contact-left {
@@ -30,6 +35,7 @@
 .contact-title {
     font-style: 60px;
     width: 80%;
+    margin: 3px 0;
 }
 
 .contact-info-item {
@@ -70,6 +76,8 @@ textarea {
     font-style: 14px;
     padding-left: 10px;
     resize: none;
+    border: none;
+    border-bottom: 1px solid black;
 }
 
 button {
