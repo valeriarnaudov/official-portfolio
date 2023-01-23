@@ -1,0 +1,51 @@
+.data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.data .title-container {
+    display: flex;
+    gap: 10px;
+}
+
+.data .title-icon {
+    width: 1rem;
+}
+
+.data .title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.data .subtitle {
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.data .time {
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.data .rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: crimson;
+    border-radius: 50%;
+}
+
+.data .line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: crimson;
+    transform: translate(6px, -8px);
+}
+
+.data .icon {
+    width: 0.7rem;
+}

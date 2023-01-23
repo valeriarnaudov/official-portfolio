@@ -74,6 +74,20 @@ function NavBar() {
                     </li>
                     <li>
                         <Link
+                            to="journey"
+                            className="menu-btn"
+                            activeClass="active"
+                            spy={true}
+                            offset={-73}
+                            smooth={true}
+                            duration={1000}
+                            delay={500}
+                        >
+                            Journey
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             to="contact"
                             className="menu-btn"
                             activeClass="active"

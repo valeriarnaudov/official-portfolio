@@ -1,3 +1,6 @@
+import EducationIcon from "./assets/img/mortarboard.png";
+import WorkIcon from "./assets/img/suitcase.png";
+
 export const projects = [
     {
         id: 1,
@@ -18,5 +21,77 @@ export const projects = [
         id: 4,
         img: "./assets/img/workout-bands.png",
         link: "http://github.com/",
+    },
+];
+
+export const education = [
+    {
+        icon: EducationIcon,
+        title: "JavaScript",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: EducationIcon,
+        title: "JavaScript",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: EducationIcon,
+        title: "JavaScript",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: EducationIcon,
+        title: "JavaScript",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: EducationIcon,
+        title: "JavaScript",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+];
+
+export const work = [
+    {
+        icon: WorkIcon,
+        title: "Supervise",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: WorkIcon,
+        title: "Supervise",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: WorkIcon,
+        title: "Supervise",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: WorkIcon,
+        title: "Supervise",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: WorkIcon,
+        title: "Supervise",
+        subtitle: "SoftUni",
+        time: "2021-2022",
+    },
+    {
+        icon: WorkIcon,
+        title: "Supervise",
+        subtitle: "SoftUni",
+        time: "2021-2022",
     },
 ];

@@ -1,0 +1,59 @@
+.journey {
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: darkgray;
+}
+
+.journey .journey-title {
+    width: 65%;
+}
+
+.journey .journey-title .title {
+    font-style: 50px;
+    font-weight: 600;
+}
+
+.journey .journey-title .subtitle {
+    margin: 20px 0;
+}
+
+.journey-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.journey-container .journey-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 2rem;
+}
+
+.journey-container .journey-tabs .separate-line {
+    width: 5px;
+    background-color: crimson;
+    height: 2rem;
+    border-radius: 6px;
+}
+
+.journey-container .journey-tabs .journey-btn {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    justify-content: center;
+    gap: 6px;
+}
+
+.journey-container .journey-tabs .journey-btn:hover {
+    color: crimson;
+}
+
+.journey-container .journey-tabs .journey-btn .icon {
+    width: 2rem;
+}

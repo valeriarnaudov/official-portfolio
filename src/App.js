@@ -4,6 +4,7 @@ import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import Intro from "./components/intro/Intro";
+import Journey from "./components/journey/Journey";
 import NavBar from "./components/navbar/NavBar";
 import ProjectList from "./components/projectList/ProjectList";
 import Toogle from "./components/toogle/Toogle";
@@ -25,6 +26,7 @@ function App() {
             <Intro />
             <About />
             <ProjectList />
+            <Journey />
             <Contact />
             <Footer />
         </div>
