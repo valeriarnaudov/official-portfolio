@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./journey.css";
 import EducationIcon from "../../assets/img/mortarboard.png";
 import WorkIcon from "../../assets/img/suitcase.png";
 import { education, work } from "../../data";
 import List from "./list/List";
+import { ThemeContext } from "../../context";
 
 function Journey() {
+    const theme = useContext(ThemeContext);
+    const themeStyle = theme.state.lightMode;
     const [active, setActive] = useState("work");
 
     const handleJourney = (state) => {
@@ -17,7 +20,7 @@ function Journey() {
     };
 
     return (
-        <section id="journey" className="journey">
+        <section id="journey" className="journey" style={{ background: themeStyle ? "linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(189,189,189,1) 100%)" : "" }}>
             <div className="journey-title">
                 <h1 className="title">My Journey</h1>
                 <span className="subtitle">

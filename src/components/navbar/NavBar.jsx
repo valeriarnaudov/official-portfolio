@@ -1,9 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-scroll";
-import Toogle from "../toogle/Toogle";
+import Toogle from "./toogle/Toogle";
 import "./navbar.css";
+import { ThemeContext } from "../../context";
 
 function NavBar() {
+    const theme = useContext(ThemeContext);
+    const themeStyle = theme.state.lightMode;
+
     const [sticky, setSticky] = useState(false);
 
     useEffect(() => {
@@ -17,9 +21,17 @@ function NavBar() {
     }, []);
 
     return (
-        <nav className={`navbar ${sticky ? "sticky" : ""}`}>
+        <nav
+            className={`navbar ${sticky ? "sticky" : ""}`}
+            style={{ background: sticky && themeStyle ? "lightgray" : "" }}
+        >
             <div className="max-width">
-                <div className="logo">
+                <div
+                    className="logo"
+                    style={{
+                        color: sticky && themeStyle ? "lightgray" : "black",
+                    }}
+                >
                     <Link
                         to="intro"
                         spy={true}
