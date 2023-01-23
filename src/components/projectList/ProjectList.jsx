@@ -13,8 +13,8 @@ function ProjectList() {
                 </p>
             </div>
             <div className="lists-list">
-                {projects.map((item) => (
-                    <Projects img={item.img} key={item.id} link={item.link} />
+                {projects.map((item, index) => (
+                    <Projects img={item.img} key={index} link={item.link} />
                 ))}
             </div>
         </section>

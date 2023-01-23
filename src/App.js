@@ -7,7 +7,6 @@ import Intro from "./components/intro/Intro";
 import Journey from "./components/journey/Journey";
 import NavBar from "./components/navbar/NavBar";
 import ProjectList from "./components/projectList/ProjectList";
-import Toogle from "./components/toogle/Toogle";
 import { ThemeContext } from "./context";
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
             }}
         >
             <NavBar />
-            <Toogle />
             <Intro />
             <About />
             <ProjectList />

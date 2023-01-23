@@ -117,20 +117,20 @@ function Contact() {
                             type="text"
                             placeholder="Name"
                             name="user_name"
-                            required="true"
+                            required={true}
                         />
                         <input
                             style={{ background: !lightMode && "#333" }}
                             type="text"
                             placeholder="Email"
-                            required="true"
+                            required={true}
                             name="user_email"
                         />
                         <input
                             style={{ background: !lightMode && "#333" }}
                             type="text"
                             placeholder="Subject"
-                            required="true"
+                            required={true}
                             name="user_subject"
                         />
                         <textarea
@@ -140,7 +140,7 @@ function Contact() {
                             }}
                             rows="5"
                             placeholder="Message"
-                            required="true"
+                            required={true}
                             name="message"
                             maxLength="1000"
                         ></textarea>

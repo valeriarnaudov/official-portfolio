@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import Toogle from "../toogle/Toogle";
 import "./navbar.css";
 
 function NavBar() {
@@ -101,6 +102,7 @@ function NavBar() {
                         </Link>
                     </li>
                 </ul>
+                <Toogle />
             </div>
         </nav>
     );
