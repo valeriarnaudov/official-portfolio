@@ -59,6 +59,43 @@ function ProjectsSidebar() {
                         <span className="item-name">Calculators</span>
                     </Link>
                 </li>
+                <li>
+                    <Link className="item" to={"/mini-projects/calculators"}>
+                        <BsFillCalculatorFill className="icon" />
+                        <span className="item-name">Calculators</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link className="item" to={"/mini-projects/calculators"}>
+                        <BsFillCalculatorFill className="icon" />
+                        <span className="item-name">Calculators</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link className="item" to={"/mini-projects/calculators"}>
+                        <BsFillCalculatorFill className="icon" />
+                        <span className="item-name">Calculators</span>
+                    </Link>
+                </li>
+                
+                <li>
+                    <Link className="item" to={"/mini-projects/calculators"}>
+                        <BsFillCalculatorFill className="icon" />
+                        <span className="item-name">Calculators</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link className="item" to={"/mini-projects/calculators"}>
+                        <BsFillCalculatorFill className="icon" />
+                        <span className="item-name">Calculators</span>
+                    </Link>
+                </li>
+                <li>
+                    <Link className="item" to={"/mini-projects/calculators"}>
+                        <BsFillCalculatorFill className="icon" />
+                        <span className="item-name">Calculators</span>
+                    </Link>
+                </li>
             </ul>
             <hr />
             <div className="creator">
