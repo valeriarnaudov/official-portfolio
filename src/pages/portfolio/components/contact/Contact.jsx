@@ -164,7 +164,7 @@ function Contact() {
                             name="message"
                             maxLength="1000"
                         ></textarea>
-                        <button>Submit</button>
+                        <button className="contact-sibmit-btn">Submit</button>
                         {send && (
                             <h3 className="send-message">
                                 Thank you for your message!

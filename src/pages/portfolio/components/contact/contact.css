@@ -80,7 +80,7 @@ textarea {
     border-bottom: 1px solid black;
 }
 
-button {
+.contact-sibmit-btn {
     border-radius: 20px;
     padding: 15px;
     background-color: crimson;
@@ -91,7 +91,7 @@ button {
     border: 3px solid crimson;
 }
 
-button:hover {
+.contact-sibmit-btn:hover {
     letter-spacing: 1px;
     font-weight: bold;
     color: crimson;
