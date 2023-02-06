@@ -11,7 +11,11 @@ function MiniProjects() {
             <section className="full-screen">
                 <Routes>
                     {pagesData.map((page) => (
-                        <Route path={page.route} element={page.element} />
+                        <Route
+                            path={page.route}
+                            element={page.element}
+                            key={page.route}
+                        />
                     ))}
                 </Routes>
             </section>

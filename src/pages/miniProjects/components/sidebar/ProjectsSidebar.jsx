@@ -18,7 +18,7 @@ function ProjectsSidebar() {
             <small className="projects-side">Projects</small>
             <ul className="list">
                 {pagesData.map((page) => (
-                    <li>
+                    <li key={page.route}>
                         <Link className="item" to={`${page.route}`}>
                             {page.icon}
                             <span className="item-name">{page.name}</span>
