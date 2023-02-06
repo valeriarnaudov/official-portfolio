@@ -25,9 +25,9 @@ function ProjectsSidebar() {
                     </Link>
                 </li>
                 <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
+                    <Link className="item" to={"/mini-projects/iphone-calculator"}>
                         <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
+                        <span className="item-name">iPhone Calculator</span>
                     </Link>
                 </li>
                 <li>
