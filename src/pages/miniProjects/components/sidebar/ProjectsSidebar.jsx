@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import "./projectsSidebar.css";
 import Logo from "../../../../assets/img/favicon.ico";
 import Portrait from "../../../../assets/img/github.png";
-import { BsFillCalculatorFill } from "react-icons/bs";
-import {TiWeatherCloudy} from 'react-icons/ti';
+import { pagesData } from "../../PagesData";
 
 function ProjectsSidebar() {
     return (
@@ -18,85 +17,14 @@ function ProjectsSidebar() {
             </div>
             <small className="projects-side">Projects</small>
             <ul className="list">
-                <li>
-                    <Link className="item" to={"/mini-projects/weather-app"}>
-                        <TiWeatherCloudy className="icon" />
-                        <span className="item-name">Weather-App</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/iphone-calculator"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">iPhone Calculator</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
-                <li>
-                    <Link className="item" to={"/mini-projects/calculators"}>
-                        <BsFillCalculatorFill className="icon" />
-                        <span className="item-name">Calculators</span>
-                    </Link>
-                </li>
+                {pagesData.map((page) => (
+                    <li>
+                        <Link className="item" to={`${page.route}`}>
+                            {page.icon}
+                            <span className="item-name">{page.name}</span>
+                        </Link>
+                    </li>
+                ))}
             </ul>
             <hr />
             <div className="creator">

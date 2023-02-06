@@ -2,8 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import ProjectsSidebar from "./components/sidebar/ProjectsSidebar";
 import "./miniProjects.css";
-import IPhoneCalculator from "./pages/iPhoneCalculator/IPhoneCalculator";
-import WeatherApp from "./pages/WeatherApp/WeatherApp";
+import { pagesData } from "./PagesData";
 
 function MiniProjects() {
     return (
@@ -11,11 +10,9 @@ function MiniProjects() {
             <ProjectsSidebar />
             <section className="full-screen">
                 <Routes>
-                    <Route
-                        path="iphone-calculator"
-                        element={<IPhoneCalculator />}
-                    />
-                    <Route path="weather-app" element={<WeatherApp />} />
+                    {pagesData.map((page) => (
+                        <Route path={page.route} element={page.element} />
+                    ))}
                 </Routes>
             </section>
         </div>
