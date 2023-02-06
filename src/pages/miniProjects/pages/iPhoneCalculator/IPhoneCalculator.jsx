@@ -1,10 +1,18 @@
 /* eslint-disable no-eval */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./iPhoneCalculator.css";
 
 function IPhoneCalculator() {
     const [currentOperations, setCurrentOperations] = useState("");
     const [result, setResult] = useState("");
+
+    useEffect(() => {
+        try {
+            setResult(eval(currentOperations));
+        } catch {
+            
+        }
+    }, [currentOperations]);
 
     const handleClick = (value) => {
         setCurrentOperations(currentOperations + value);
