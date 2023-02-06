@@ -5,13 +5,13 @@ export const Center = styled.div`
     text-align: center;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    height: 100%;
 `;
 
 export const Ring = styled.div`
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     animation: ring 2s linear infinite;
     @keyframes ring {
